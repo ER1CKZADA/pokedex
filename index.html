@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Links -->
+  <link rel="icon" href="./images/flavicon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./estilo.css">
+
+  <!-- Main JS -->
+  <script defer src="./script.js"></script>
+
+  <title>Pokédex</title>
+</head>
+<body>
+
+  <main>
+    <img src="#" alt="pokemon" class="pokemon__image">
+
+    <h1 class="pokemon__data">
+      <span class="pokemon__number"></span> -
+      <span class="pokemon__name"></span>
+    </h1>
+
+    <form class="form">
+      <input
+        type="search"
+        class="input__search"
+        placeholder="Nome ou número"
+        required
+      />
+    </form>
+
+    <div class="buttons">
+      <button class="button btn-prev">&lt; Prev </button>
+      <button class="button btn-shiny">Shiny </button>
+      <button class="button btn-next">Prox &gt;</button>
+    </div>
+
+    <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
+
+  </main>
+
+  <main>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title"> Stats</h5>
+          <div class="row">
+            <div class="col">HP:</div>
+            <div class="col pokemon__hp"></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">Ataque:</div>
+            <div class="col pokemon__atk"></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">Defesa:</div>
+            <div class="col pokemon__def"></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">Tipo:</div>
+            <div class="col pokemon__type"></div>
+          </div>
+          
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <footer class="footer navbar-fixed-bottom">
+    <div class="second-bar">
+       <div class="container">
+            <h4 class="logo" style="margin-bottom: 10px;text-align: center;">              
+                Pokedex by André Favero
+            </h4>
+            <h4 >
+              Fundamentos de desenvolvimento Web
+            </h4>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
